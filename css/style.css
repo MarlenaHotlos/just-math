@@ -23,13 +23,19 @@ body {
 h1,
 h2 {
   font-family: 'Abolition Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* 'Abolition Regular',  */
+}
+
+h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
 }
 
 h1 {  
-  font-size: 5.625rem; /* 90px/16px  */
+  font-size: 9rem; /* 90px/16px  */
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-weight: normal;
+  letter-spacing: 0.05em;
   line-height: 1.3;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 80%);
   margin: 12px 0 0;
@@ -41,6 +47,7 @@ h2 {
   font-weight: normal;
   line-height: 1.1;
   margin: 0 0 .5em; /* 0 0 26px */
+  text-align: center;
 }
 
 h3 {
@@ -50,6 +57,14 @@ h3 {
   margin-bottom: 1.7em; /* 34px */
 }
 
+h4 {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  /* border-bottom: 2px solid; */
+  padding-bottom: 5px;
+}
 img {
   max-width: 100%;
   margin-bottom: 20px;
@@ -65,33 +80,37 @@ li {
   margin-bottom: 10px;
 }
 
+.secondary-content h2 {
+  color: #761e99;
+  font-size: 4em;
+}
 /* Pseudo-classes ------------------ */
 
 a:link {
-  color: rgb(255, 169, 73);
+  color: #451880;
   text-decoration: none;
 }
 
 a:visited {
-  color: lightblue;
+  color: rgb(118, 140, 235);
 }
 
 a:hover {
-  color: rgba(255, 169, 73, .4);
+  color: rgba(24, 73, 236, 0.4);
 }
 
 a:active {
-  color: lightcoral;
+  color: rgb(207, 93, 211);
 }
 
 /* Main Styles --------------------- */
 
 .main-header {
-  padding-top: 170px;
+  padding-top: 250px;
   height: 850px;
-  background: linear-gradient(#ffa949, transparent 90%), 
-              linear-gradient(0deg, #fff, transparent 20%),
-              #ffa949 url('../img/mountains.jpg') no-repeat center;
+  background: linear-gradient(#000, transparent 90%), 
+              linear-gradient(0deg, #fff, transparent 10%),
+              #ffa949 url('../img/matrix-nums.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -100,8 +119,8 @@ a:active {
   font-size: 1.625rem; /* 26px/16px */
   letter-spacing: .065em;
   font-weight: 200;
-  border-bottom: 2px solid;
-  padding-bottom; 10px;
+  /* border-bottom: 2px solid; */
+  padding-bottom: 5px;
 }
 
 .intro {
@@ -137,7 +156,7 @@ a:active {
 .main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 10px solid #ffa949;
+  border-bottom: 10px solid #451880;
 }
 
 .t-border {
@@ -159,9 +178,9 @@ a:active {
   color: white;
   text-align: left;
   padding: 18% 24%;
-  border-top: 10px solid #ffa949;
+  border-top: 10px solid #451880;
   margin: 105px 0 60px;
-  background: #434a52 url('../img/bear.jpg') no-repeat center;
+  background: #434a52 url('../img/typewriter.jpeg') no-repeat center;
   background-size: cover;
   box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1);
   
@@ -170,7 +189,7 @@ a:active {
 
 .arrow {
   width: 50px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 /* Floated Columns ------------------ */
@@ -195,3 +214,46 @@ a:active {
   display: table;
   clear: both;
 }
+
+/* Media Queries -------------------- */
+
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+  .wildlife {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border: none;
+  }
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
+  .title {
+    font-size: 1.3rem;
+    border: none;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+  .arrow {
+    display: none;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+}
+
+
+
