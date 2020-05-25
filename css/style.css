@@ -84,6 +84,11 @@ li {
   color: #761e99;
   font-size: 4em;
 }
+
+.olimpiada h2 {
+  color: #761e99;
+  font-size: 4em;
+}
 /* Pseudo-classes ------------------ */
 
 a:link {
@@ -96,7 +101,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgba(24, 73, 236, 0.4);
+  color: #174eb4;
 }
 
 a:active {
@@ -109,8 +114,8 @@ a:active {
   padding-top: 250px;
   height: 850px;
   background: linear-gradient(#000, transparent 90%), 
-              linear-gradient(0deg, #fff, transparent 10%),
-              #ffa949 url('../img/matrix-nums.jpg') no-repeat center;
+              /* linear-gradient(0deg, #fff, transparent 10%), */
+              #451880 url('../img/matrix-nums.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -142,8 +147,22 @@ a:active {
 .secondary-content {
 	padding-top: 80px;
 	padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
+  border-bottom: 2px solid #aaacad;
 }
+
+.olimpiada {
+  padding-top: 80px;
+  color: #000;
+	padding-bottom: 70px;
+  /* border-bottom: 2px solid #dfe2e6; */
+  border-bottom: 3px solid #aaacad;
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
 
 .callout {
   font-size: 1.25em;
@@ -160,7 +179,7 @@ a:active {
 }
 
 .t-border {
-  border-top: 2px solid #dfe2e6;
+  border-top: 2px solid #aaacad;
 }
 
 /* Layout Styles ------------------ */
@@ -186,6 +205,8 @@ a:active {
   
   border-radius: 10px;
 }
+
+
 
 .arrow {
   width: 50px;
