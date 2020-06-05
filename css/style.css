@@ -85,7 +85,7 @@ li {
   font-size: 4em;
 }
 
-.olimpiada h2 {
+.zwykly-tekst h2 {
   color: #761e99;
   font-size: 4em;
 }
@@ -150,7 +150,7 @@ a:active {
   border-bottom: 2px solid #aaacad;
 }
 
-.olimpiada {
+.zwykly-tekst {
   padding-top: 80px;
   color: #000;
 	padding-bottom: 70px;
