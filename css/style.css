@@ -15,7 +15,7 @@
 }
 
 body {
-  color: #878787;
+  color: #646464;
   margin: 0;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -152,7 +152,7 @@ a:active {
 
 .zwykly-tekst {
   padding-top: 80px;
-  color: #000;
+  color: #646464;
 	padding-bottom: 70px;
   /* border-bottom: 2px solid #dfe2e6; */
   border-bottom: 3px solid #aaacad;
